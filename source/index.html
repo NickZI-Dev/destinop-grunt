@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destino Pokémon!</title>
+  <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">              
+  <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+  <link rel="shortcut icon" href="@@ENDERECO_DO_FAVICON" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <h1>Destino Pokémon !</h1>
+    <div class="container">
+
+      <div class="grid-layout-lg">
+        <div class="iniciais">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" alt="imagem-do-bulbasauro">
+          <div>
+            <h2>Bulbasaur</h2>
+            <h3>Grama</h3>
+            <h4>#001</h4>
+          </div>
+        </div>
+        <div class="iniciais">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png" alt="imagem-do-charmander">
+          <div>
+            <h2>Charmander</h2>
+            <h3>Chamas</h3>
+            <h4>#004</h4>
+          </div>
+        </div>
+        <div class="iniciais">
+          <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" alt="imagem-do-squirtle">
+          <div>
+            <h2>Squirtle</h2>
+            <h3>Água</h3>
+            <h4>#007</h4>
+          </div>
+        </div>
+        <button type="button" class="btn-prosseguir btn-prosseguir-lg" id="prosseguir-lg">
+          Prosseguir
+        </button>
+      </div>
+
+      <form class="form-treinador" id="form-treinadores">
+        <label for="nome-treinador">Adicione um treinador:</label>
+        <input type="text" id="nome-treinador" required>
+        <p class="error">Campo obrigatório.</p>
+        <button type="submit">Adicionar</button>
+      </form>
+      <table cellspacing="0" class="tabela-treinadores">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nomes adicionados:</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-treinadores">
+          <tr>
+            <td>#</td>
+            <td>---</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="error-table">
+        <p>Número máximo de treinadores atingido.</p>
+      </div>
+
+      <button type="button" class="btn-prosseguir" id="prosseguir">Prosseguir</button>
+    </div>
+  </main>
+
+  <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>
